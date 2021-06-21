@@ -11,6 +11,7 @@ import CartScreen from './screens/CartScreen/CartScreen';
 import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import Footer from './components/Footer/Footer';
 
 import './styles/global.scss';
 
@@ -31,7 +32,7 @@ function App() {
             <Route exact path="/cart" component={CartScreen} />
           </Switch>
         </main>
-  
+    <Footer />
 
     </Router>
   );
