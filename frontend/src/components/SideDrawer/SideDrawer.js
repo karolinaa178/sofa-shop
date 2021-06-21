@@ -1,4 +1,4 @@
-import styles from "./SideDrawer.module.scss";
+import "./SideDrawer.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -18,13 +18,13 @@ const SideDrawer = ({ show, click }) => {
 
   return (
     <div className={sideDrawerClass.join(" ")}>
-      <ul className={styles.sidedrawer__links} onClick={click}>
+      <ul className="sidedrawer__links" onClick={click}>
         <li>
           <Link to="/cart">
             <i className="fas fa-shopping-cart"></i>
             <span>
               Cart{" "}
-              <span className={styles.sidedrawer__cartbadge}>{getCartCount()}</span>
+              <span className="sidedrawer__cartbadge">{getCartCount()}</span>
             </span>
           </Link>
         </li>
