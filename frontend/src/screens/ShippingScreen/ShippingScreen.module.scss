@@ -1,0 +1,38 @@
+
+.shippingScreen {
+    max-width: 1300px;
+    margin: 32px auto;
+}
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 36px;
+    border: 1px solid #9A9A9B;
+    border-radius: 5px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin: 16px 0;
+    display: block;
+}
+
+.btnPrimary {
+    padding: 16px;
+    color: white;
+    background-color: #171717;
+    border: 1px solid #171717;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #068488;
+        border: 1px solid #068488;
+    }
+}
+
+  

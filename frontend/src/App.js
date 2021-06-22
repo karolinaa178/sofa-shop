@@ -6,13 +6,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import ProductScreen from './screens/ProductScreen/ProductScreen';
 import CartScreen from './screens/CartScreen/CartScreen';
+import ShippingScreen from './screens/ShippingScreen/ShippingScreen';
+
 
 // Components
 import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Footer from './components/Footer/Footer';
-import CarouselContainer from './components/Carousel/CarouselContainer';
 
 import './styles/global.scss';
 
@@ -26,12 +27,12 @@ function App() {
         <Navbar click={() =>setSideToggle(true)} />
         <SideDrawer show={sideToggle}  click={() =>setSideToggle(false)}/>
         <Backdrop show={sideToggle} click={() =>setSideToggle(false)} />
-        <CarouselContainer />
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />
             <Route exact path="/cart" component={CartScreen} />
+            <Route exact path="/shipping" component={ShippingScreen} />
           </Switch>
         </main>
     <Footer />

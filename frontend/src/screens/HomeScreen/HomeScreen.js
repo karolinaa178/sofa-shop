@@ -7,6 +7,7 @@ import Product from "../../components/Product/Product";
 
 //Actions
 import { getProducts as listProducts } from "../../redux/actions/productActions";
+import CarouselContainer from "../../components/Carousel/CarouselContainer";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const HomeScreen = () => {
 
   return (
     <div className={styles.homescreen}>
+      <CarouselContainer />
       <h2 className={styles.homescreen__title}>Latest Products</h2>
       <div className={styles.homescreen__products}>
         {loading ? (
