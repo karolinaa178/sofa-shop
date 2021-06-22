@@ -1,0 +1,12 @@
+.carousel {
+    height: 550px;
+}
+.carouselItem {
+    height: 550px;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

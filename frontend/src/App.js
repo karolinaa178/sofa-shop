@@ -12,6 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Footer from './components/Footer/Footer';
+import CarouselContainer from './components/Carousel/CarouselContainer';
 
 import './styles/global.scss';
 
@@ -25,6 +26,7 @@ function App() {
         <Navbar click={() =>setSideToggle(true)} />
         <SideDrawer show={sideToggle}  click={() =>setSideToggle(false)}/>
         <Backdrop show={sideToggle} click={() =>setSideToggle(false)} />
+        <CarouselContainer />
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
