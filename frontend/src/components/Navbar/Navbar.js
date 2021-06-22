@@ -12,10 +12,12 @@ const Navbar = ({ click }) => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbar__logo}>
-        <h2>STYLE29</h2>
-      </div>
-
+      <Link to="/">
+        <div className={styles.navbar__logo}>
+          <h2>STYLE29</h2>
+        </div>
+      </Link>
+      
       <ul className={styles.navbar__links}>
         <li>
           <Link to="/cart" className={styles.cart__link}>
